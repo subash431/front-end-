@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 65.25%;
+}
+.main__container {
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-top: 1rem;
+
+  border: 1px solid rgb(13, 13, 13);
+}
+body {
+  background-color: rgb(237, 237, 188);
+}
+.main__container > h1 {
+  text-align: center;
+  font-size: 3rem;
+  border: 2px solid rgb(13, 13, 13);
+  background-color: rgb(244, 118, 118);
+  color: rgb(251, 249, 249);
+}
+.sub_div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.sub_div > h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+.cap {
+  font-size: 3rem;
+}
+.sub_div > p {
+  font-size: 2rem;
+  text-align: left;
+  font-family: cursive;
+  text-align: justify;
+}
+
+.sub_div ul li {
+  text-align: left;
+  font-size: 2rem;
+  font-family: sans-serif;
+  list-style-type: square;
+  color: rgb(42, 2, 42);
+  font-family: sans-serif;
+}
+.sub_div > ul > li:first-child {
+  background-color: green;
+  color: rgb(238, 120, 120);
+}
+.sub_div > ul > li:last-child {
+  background-color: red;
+  color: rgb(74, 72, 72);
+}
+.sub_div img {
+  width: auto;
+  height: 208px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.sub_div img:hover {
+  transform: translate(0.2);
+  transform: scale(1.1);
+}
+span {
+  color: red;
+}
+.form_control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.form_control > h2 {
+  font-size: 3rem;
+  background-color: rgb(161, 104, 28);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.main__form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.2rem;
+  width: 50%;
+  padding: 1.5rem;
+
+  border: 1px solid rgb(0, 207, 253);
+  margin: 0rem;
+  border-radius: 1rem;
+  background-color: rgb(188, 242, 242);
+}
+.form__element label {
+  font-size: 1.5rem;
+}
+input[type="text"],
+select {
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 680px;
+}
+#btn {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(108, 231, 51);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: transparent;
+  border: 1px solid rgb(108, 231, 51);
+}
+
+/* Media Query for the responsiveness  */
+@media screen and (max-width: 900px) {
+  .main__form {
+    width: 100%;
+  }
+  input[type="text"],
+  select {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main__form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__container > h1 {
+    font-size: 2rem;
+  }
+  .sub_div > p {
+    font-size: 1.5rem;
+  }
+  .sub_div > h2 {
+    font-size: 1.5rem;
+  }
+  .sub_div ul li {
+    font-size: 1.2rem;
+  }
+  .sub_div img {
+    width: 100%;
+  }
+  .form_control > h2 {
+    font-size: 1.5rem;
+  }
+  .form_control {
+    gap: 0.5rem;
+  }
+  input[type="text"],
+  select {
+    padding: 2px;
+    margin: 6px 0;
+  }
+  .main__form {
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  input[type="text"],
+  select {
+    width: 250px;
+  }
+  .sub_div > p {
+    font-size: 1rem;
+  }
+  .sub_div {
+    gap: 1rem;
+    margin: 0rem;
+  }
+  .sub_div > h2 {
+    font-size: 1rem;
+  }
+  .sub_div ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  input[type="text"],
+  select {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  input[type="text"],
+  select {
+    width: 400px;
+  }
+}
