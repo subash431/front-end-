@@ -1,7 +1,3 @@
-<!-- Name: Subash Pariyar C0913543 -->
-<!-- Date: 5 November 2023 -->
-
-
 ------------------------------------README--------------------------------------------------------------------
 ->1. index.html is main file 
 ->2. All css include in the style.css file. This is the external css file
